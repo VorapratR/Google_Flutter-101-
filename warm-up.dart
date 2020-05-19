@@ -47,9 +47,13 @@ class Dog {
 }
 
 class SmallDog extends Dog {
+  static double MAX_BODY_SIZE = 30;
   String name = "Lucky";
   void runAway() {
     print("I am running");
   }
+  void bark() { 
+      print("Name: $name | Age: $age | Type: $type | SIZE: $MAX_BODY_SIZE"); 
+   } 
 }
     
