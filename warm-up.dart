@@ -1,4 +1,5 @@
 void main() {
+  // เขียน code if-else
   int age = 10;
   if (age >= 50) {
     print("Old");
@@ -7,12 +8,18 @@ void main() {
   }else if (age < 20) {
     print("Young");
   } 
+  // เขียน loop
   var a = [1,2,3];
   a.forEach((element) => {
     print(element)
   });
-  Area(3,4);
+  // ทดสอบ fn
+  Area(3, 4);
   Area(3);
+  print(AreaArrow(a:5, b:12));
+
+
+  // ทดสอบ class
   Dog dog = Dog();
   dog.bark();
   SmallDog sm = SmallDog();
@@ -27,6 +34,7 @@ void Area(int a,[int b]) {
     print("area = ${a*a}");
   }
 }
+int AreaArrow({int a, int b}) => a*b;
 
 class Dog {  
    String name = "Leo";  
